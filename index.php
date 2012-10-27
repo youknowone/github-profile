@@ -53,8 +53,8 @@
         <p class="view"><a href="https://github.com/<?=$github?>">View the Project on GitHub <small><?=$github?></small></a></p>
         </aside>
         <h3 id="<?=$name?>"><?=$name?></h3>
-        <? if ($description): ?><p><?=$description?></p><? endif ?>
-        <? if ($longdescription): ?><p><?=$longdescription?></p><? endif ?>
+        <? if ($project['description']): ?><p><?=$description?></p><? endif ?>
+        <? if ($project['longdescription']): ?><p><?=$longdescription?></p><? endif ?>
        
         <? if (isset($project['downloads'])): ?>
         <ul>
