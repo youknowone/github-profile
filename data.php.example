@@ -1,0 +1,32 @@
+<?
+$user = array(
+  'username' => 'youknowone', # github username
+  'name' => 'Jeong YunWon', # real name
+  'title' => 'Software Developer', # job title
+  'description' => '<p>This page is generated to show an example. Page data is generated from data.php</p>', # about you
+  'postscript' => '<h2>How about this?</h2><p>To make your own one, fork this project and rename the repository &lt;yourname&gt;.github.com</p>', # postscript after projects
+);
+
+$projects = array(
+  # <projectname> => data array
+  'github-profile' => array(
+    'description' => 'Github profile generator based on manual input data.', # project description
+    'github' => 'youknowone/github-profile', # github identifier
+    'submodule' => False, # has submodule. default is False
+    'cocoapod' => False, # has cocoapod. default is False
+    'minor' => False, # is minor project. default is False
+    'open' => array('type' => 'edit_n_make', 'file' => 'data.php'), # project opener
+    'links' => array(
+      array('title' => 'Project page', 'link' => 'youknowone.github.com/github-profile'), # links on right-aside
+    ),
+    'downloads' => array( # download buttons
+      array('title' => 'Tar ball', 'link' => 'https://github.com/youknowone/github-profile/tarball/master'), # title and link is required
+      array('title' => 'Zip ball', 'link' => 'https://github.com/youknowone/github-profile/zipball/master', 'download' => 'Download'), # 'download' is additional title. default is 'Download'
+    ),
+  ),
+);
+
+$openers = array(
+    # open type => opener script
+    'edit_n_make' => "$ edit '%s' && make",
+);
