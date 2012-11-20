@@ -47,12 +47,13 @@ $projects = array(
       array('title' => 'Package', 'link' => 'https://github.com/youknowone/VisualJSON/downloads'),
     ),
   ),
-  'Writedown' => array(
+  'Writedown!' => array(
     'description' => 'Markdown editor with preview for OS X',
     'github' => 'youknowone/writedown',
     'cocoapod' => True,
     'open' => array('type' => 'xcworkspace', 'file' => 'Writedown'),
     'downloads' => array(
+      array('title' => 'Appstore', 'link' => 'https://itunes.apple.com/app/id574184591'),
       array('title' => 'Package', 'link' => 'https://github.com/youknowone/writedown/downloads'),
     ),
   ),
@@ -134,6 +135,14 @@ $projects = array(
     'description' => 'Pythun(<-PYTHon UNindented is indent-insensitive python dialect, just for fun)',
     'github' => 'youknowone/pythun',
     'minor' => True,
+  ),
+  '농협 서버 체험판' => array(
+    'description' => '농협 서버 체험판에서는 농협 서버 가상 터미널에서 농협 서버의 보안 정책을 간단하게 체험해 볼 수 있습니다.',
+	'github' => 'youknowone/nonghyeop',
+	'minor' => True,
+    'links' => array(
+      array('title' => 'Terminal', 'link' => 'youknowone.github.com/nonghyeop'),
+    ),
   ),
 );
 
