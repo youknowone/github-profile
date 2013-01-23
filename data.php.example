@@ -1,4 +1,6 @@
 <?
+include "templates.php";
+
 $user = array(
   'username' => 'youknowone', # github username
   'name' => 'Jeong YunWon', # real name
@@ -24,9 +26,4 @@ $projects = array(
       array('title' => 'Zip ball', 'link' => 'https://github.com/youknowone/github-profile/zipball/master', 'download' => 'Download'), # 'download' is additional title. default is 'Download'
     ),
   ),
-);
-
-$openers = array(
-    # open type => opener script
-    'edit_n_make' => "$ edit '%s' && make",
 );

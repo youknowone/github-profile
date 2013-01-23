@@ -67,6 +67,30 @@
         </ul>
         <? endif ?>
 
+        <? if ($project['install']): ?>
+        <? foreach ($install as $media => $installitem): ?>
+        <h4>
+          <?
+            if (isset($installers[$media])) {
+              $installer = $installers[$media];
+            } else {
+              $installer = $installitem;
+              $installer['from'] = $media;
+            }
+          ?>
+          <? if (isset($installer['title'])): ?>
+            <?=$installer['title']?>
+          <? else: ?>
+            Install from <? if (isset($installer['link'])): ?><a href="<?=$installer['link']?>"><? endif ?><?=$installer['from']?><? if (isset($installer['link'])): ?></a><? endif ?>
+          <? endif ?>
+        </h4>
+        <? if (isset($installitem['description'])): ?>
+          <p><?=$installitem['description']?></p>
+        <? endif ?>
+        <pre><code><?=sprintf($installer['instruction'], isset($installitem['name']) ? $installitem['name'] : $name )?></pre></code>
+        <? endforeach ?>
+        <? endif ?>
+
         <h4>Download source code</h4>
         <p><a href="https://github.com/<?=$github?>/zipball/master">Zip ball</a>, <a href="https://github.com/<?=$github?>/tarball/master">Tar ball</a> or git-clone:</p>
 <pre><code>$ git clone git://github.com/<?=$github?>.git
