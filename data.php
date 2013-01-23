@@ -13,6 +13,7 @@ $projects = array(
     'description' => 'An IRC client, OS X native front-end for XChat',
     'github' => 'xchataqua/xchataqua',
     'submodule' => True,
+    'cocoapod' => True,
     'open' => array('type' => 'xcworkspace', 'file' => 'XChatAqua'),
     'links' => array(
       array('title' => 'Project page', 'link' => 'xchataqua.github.com'),
@@ -38,6 +39,7 @@ $projects = array(
     'description' => 'JSON pretty-viewer for OS X.',
     'github' => 'youknowone/VisualJSON',
     'submodule' => True,
+    'cocoapod' => True,
     'open' => array('type' => 'xcworkspace', 'file' => 'VisualJSON'),
     'links' => array(
       array('title' => 'Project page', 'link' => 'youknowone.github.com/VisualJSON'),
@@ -70,6 +72,16 @@ $projects = array(
       array('title' => 'Cocoapods', 'link' => '#cocoapod', 'download' => 'Pod from'),
     ),
   ),
+  'QRQR' => array(
+    'description' => 'Simple QR code decoder',
+    'github' => 'youknowone/QRQR',
+    'minor' => 'True',
+    'cocoapod' => True,
+    'open' => array('type' => 'xcworkspace', 'file' => 'QRQR'),
+    'downloads' => array(
+      array('title' => 'Appstore', 'link' => 'https://itunes.apple.com/app/id444076697'),
+    ),
+  ),
   'cdebug' => array(
     'description' => 'Debug mode log/assertion for C/Objective-C in a file',
     'github' => 'youknowone/cdebug',
@@ -81,6 +93,22 @@ $projects = array(
     'downloads' => array(
       array('title' => 'File', 'link' => 'https://github.com/youknowone/cdebug/blob/master/debug.h'),
       array('title' => 'Cocoapods', 'link' => '#cocoapod', 'download' => 'Pod from'),
+    ),
+  ),
+  'prettyexc' => array(
+    'description' => 'Human readable exception for Python',
+    'github' => 'youknowone/prettyexc',
+    'minor' => True,
+    'downloads' => array(
+      array('title' => 'PyPI', 'link' => 'http://pypi.python.org/pypi/prettyexc'),
+    ),
+  ),
+  'cacheobj' => array(
+    'description' => 'Composable Object-Property interface for any cache storage.',
+    'github' => 'youknowone/cacheobj',
+    'minor' => True,
+    'downloads' => array(
+      array('title' => 'PyPI', 'link' => 'http://pypi.python.org/pypi/cacheobj'),
     ),
   ),
   'xcodepkgtool' => array(
@@ -103,7 +131,7 @@ $projects = array(
     'description' => 'iOS frontend for http://hangulize.org',
     'github' => 'youknowone/hangulize-ios',
     'minor' => True,
-    'submodule' => True,
+    'cocoapod' => True,
     'open' => array('type' => 'xcode', 'file' => 'Hangulize'),
     'downloads' => array(
       array('title' => 'Appstore', 'link' => 'https://itunes.apple.com/app/id418530537', 'download' => 'Download from'),
@@ -117,6 +145,14 @@ $projects = array(
     'open' => array('type' => 'edit & make', 'file' => 'data.php'),
     'links' => array(
       array('title' => 'Example', 'link' => 'youknowone.github.com/github-profile'),
+    ),
+  ),
+  'itunes-iap' => array(
+    'description' => 'Itunes In-app Purchase verification API wrapper',
+    'github' => 'youknowone/itunes-iap',
+    'minor' => True,
+    'downloads' => array(
+      array('title' => 'PyPI', 'link' => 'http://pypi.python.org/pypi/itunes-iap'),
     ),
   ),
   'libintl-alternative' => array(
@@ -136,10 +172,21 @@ $projects = array(
     'github' => 'youknowone/pythun',
     'minor' => True,
   ),
+  '조선 사진기' => array(
+    'description' => '뭐든지 북한산으로 만들어 주는 유용한 사진기',
+    'github' => 'youknowone/JoseonCamera',
+    'minor' => True,
+    'submodule' => True,
+    'open' => array('type' => 'xcode', 'file' => 'JoseonCamera'),
+    'downloads' => array(
+      array('title' => 'Appstore', 'link' => 'https://itunes.apple.com/app/id374201131'),
+    ),
+  ),
   '농협 서버 체험판' => array(
     'description' => '농협 서버 체험판에서는 농협 서버 가상 터미널에서 농협 서버의 보안 정책을 간단하게 체험해 볼 수 있습니다.',
-	'github' => 'youknowone/nonghyeop',
-	'minor' => True,
+    'github' => 'youknowone/nonghyeop',
+    'minor' => True,
+    'open' => array('type' => 'raw', 'file' => 'index.html'),
     'links' => array(
       array('title' => 'Terminal', 'link' => 'youknowone.github.com/nonghyeop'),
     ),
