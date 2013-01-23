@@ -1,4 +1,6 @@
 <?
+include 'templates.php';
+
 $user = array(
   'username' => 'youknowone',
   'name' => 'Jeong YunWon',
@@ -67,9 +69,8 @@ $projects = array(
     'links' => array(
       array('title' => 'Document', 'link' => 'youknowone.github.com/FoundationExtension'),
     ),
-    'downloads' => array(
-      array('title' => 'Github', 'link' => 'http://youknowone.github.com/FoundationExtension/#Download', 'download' => 'Clone from'),
-      array('title' => 'Cocoapods', 'link' => '#cocoapod', 'download' => 'Pod from'),
+    'install' => array(
+      'cocoapods' => array('description' => 'Available pods are `FoundationExtension`, `FoundationExtension/CocoaExtension` and `FoundationExtension/UIKitExtension`.'),
     ),
   ),
   'QRQR' => array(
@@ -91,8 +92,10 @@ $projects = array(
       array('title' => 'Document', 'link' => 'youknowone.github.com/cdebug'),
     ),
     'downloads' => array(
-      array('title' => 'File', 'link' => 'https://github.com/youknowone/cdebug/blob/master/debug.h'),
-      array('title' => 'Cocoapods', 'link' => '#cocoapod', 'download' => 'Pod from'),
+      array('title' => 'A File', 'link' => 'https://github.com/youknowone/cdebug/blob/master/debug.h'),
+    ),
+    'install' => array(
+      'cocoapods' => array(),
     ),
   ),
   'prettyexc' => array(
@@ -102,6 +105,9 @@ $projects = array(
     'downloads' => array(
       array('title' => 'PyPI', 'link' => 'http://pypi.python.org/pypi/prettyexc'),
     ),
+    'install' => array(
+      'pypi' => array(),
+    ),
   ),
   'cacheobj' => array(
     'description' => 'Composable Object-Property interface for any cache storage.',
@@ -109,6 +115,9 @@ $projects = array(
     'minor' => True,
     'downloads' => array(
       array('title' => 'PyPI', 'link' => 'http://pypi.python.org/pypi/cacheobj'),
+    ),
+    'install' => array(
+      'pypi' => array(),
     ),
   ),
   'xcodepkgtool' => array(
@@ -123,8 +132,8 @@ $projects = array(
     'minor' => True,
     'submodule' => True,
     'open' => array('type' => 'xcode', 'file' => 'ObjectXML'),
-    'downloads' => array(
-      array('title' => 'Cocoapods', 'link' => '#cocoapod', 'download' => 'Pod from'),
+    'install' => array(
+      'cocoapods' => array(),
     ),
   ),
   'hangulize for iOS' => array(
@@ -154,6 +163,9 @@ $projects = array(
     'downloads' => array(
       array('title' => 'PyPI', 'link' => 'http://pypi.python.org/pypi/itunes-iap'),
     ),
+    'install' => array(
+      'pypi' => array(),
+    ),
   ),
   'libintl-alternative' => array(
     'description' => 'libintl alternative implementation to replace it with NSBundle for OS X / iOS',
@@ -163,8 +175,8 @@ $projects = array(
     'links' => array(
       array('title' => 'Document', 'link' => 'youknowone.github.com/libintl-alternative'),
     ),
-    'downloads' => array(
-      array('title' => 'Cocoapods', 'link' => '#cocoapod', 'download' => 'Pod from'),
+    'install' => array(
+      'cocoapods' => array(),
     ),
   ),
   'pythun' => array(
@@ -190,11 +202,8 @@ $projects = array(
     'links' => array(
       array('title' => 'Terminal', 'link' => 'youknowone.github.com/nonghyeop'),
     ),
+    'downloads' => array(
+      array('title' => 'Terminal', 'link' => 'http://youknowone.github.com/nonghyeop', 'download' => 'View the'), 
+    ),
   ),
-);
-
-$openers = array(
-    'xcode' => "$ open '%s.xcodeproj'",
-    'xcworkspace' => "$ open '%s.xcworkspace'",
-    'raw' => "$ see '%s'",
 );
