@@ -11,6 +11,16 @@ $user = array(
   ',
 );
 $projects = array(
+  'UI7Kit' => array(
+    'description' => 'Backport flat-style UIKit from iOS7 to iOS5+',
+    'longdescription' => 'This project supports drop-in-replacement of legacy UIKit, with dynamic patching. You also can use UI7-prefix classes of UIKit.',
+    'github' => 'youknowone/UI7Kit',
+    'cocoapod' => True,
+    'open' => array('type' => 'xcworkspace', 'file' => 'UI7Kit'),
+    'install' => array(
+      'cocoapods' => array(),
+    ),
+  ),
   'XChat Azure' => array(
     'description' => 'An IRC client, OS X native front-end for XChat',
     'github' => 'xchataqua/xchataqua',
@@ -154,6 +164,17 @@ $projects = array(
     'open' => array('type' => 'edit & make', 'file' => 'data.php'),
     'links' => array(
       array('title' => 'Example', 'link' => 'youknowone.github.com/github-profile'),
+    ),
+  ),
+  'easyirc' => array(
+    'description' => 'An IRC toolkit to develop IRC client or bot, especially for Python/IRC beginner.',
+    'github' => 'youknowone/easyirc',
+    'minor' => True,
+    'downloads' => array(
+      array('title' => 'PyPI', 'link' => 'http://pypi.python.org/pypi/easyirc'),
+    ),
+    'install' => array(
+      'pypi' => array(),
     ),
   ),
   'itunes-iap' => array(
