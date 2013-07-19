@@ -18,7 +18,9 @@
         <h1><a href="#top">Jeong YunWon</a></h1>
         <p>Software Developer</p>
         <p class="view"><a href="https://github.com/youknowone/">View all Projects on GitHub <small>github.com/youknowone</small></a></p>
-                        <h3><a href="#XChat Azure">XChat Azure</a></h3>
+                        <h3><a href="#UI7Kit">UI7Kit</a></h3>
+        <p class="view">Backport flat-style UIKit from iOS7 to iOS5+<a href="https://github.com/youknowone/UI7Kit"><small>youknowone/UI7Kit</small></a></p>
+                <h3><a href="#XChat Azure">XChat Azure</a></h3>
         <p class="view">An IRC client, OS X native front-end for XChat<a href="https://github.com/xchataqua/xchataqua"><small>xchataqua/xchataqua</small></a></p>
                 <h3><a href="#구름 입력기">구름 입력기</a></h3>
         <p class="view">OS X를 위한 새로운 한글 입력기. 편리하게, 가볍게, 자유롭게.<a href="https://github.com/gureum/gureum"><small>gureum/gureum</small></a></p>
@@ -38,6 +40,7 @@
                 [<a href="#ObjectXML">ObjectXML</a>] 
                 [<a href="#hangulize for iOS">hangulize for iOS</a>] 
                 [<a href="#github-profile">github-profile</a>] 
+                [<a href="#easyirc">easyirc</a>] 
                 [<a href="#itunes-iap">itunes-iap</a>] 
                 [<a href="#libintl-alternative">libintl-alternative</a>] 
                 [<a href="#pythun">pythun</a>] 
@@ -48,6 +51,26 @@
 
       <section id="top">
         <p>I distribute some projects for hobby on github. This page generator is published on github too. See <a href="#github-profile">github-profile</a></p>
+                <section>
+        <aside>
+                <p class="view"><a href="https://github.com/youknowone/UI7Kit">View the Project on GitHub <small>youknowone/UI7Kit</small></a></p>
+        </aside>
+        <h3 id="UI7Kit">UI7Kit</h3>
+        <p>Backport flat-style UIKit from iOS7 to iOS5+</p>        <p>This project supports drop-in-replacement of legacy UIKit, with dynamic patching. You also can use UI7-prefix classes of UIKit.</p>       
+        
+                        <h4>
+                                Install from Cocoapods                  </h4>
+                <pre><code>(If you are new at Cocoapods: http://cocoapods.org/#install)
+$ echo "pod 'UI7Kit'" >> Podfile
+$ pod install</pre></code>
+                
+        <h4>Download source code</h4>
+        <p><a href="https://github.com/youknowone/UI7Kit/zipball/master">Zip ball</a>, <a href="https://github.com/youknowone/UI7Kit/tarball/master">Tar ball</a> or git-clone:</p>
+<pre><code>$ git clone git://github.com/youknowone/UI7Kit.git
+$ cd UI7Kit
+$ pod install
+$ open 'UI7Kit.xcworkspace'</code></pre>
+        </section>
                 <section>
         <aside>
                         <p class="view"><a href="http://xchataqua.github.com">View the Project page <small>xchataqua.github.com</small></a></p>
@@ -143,7 +166,7 @@ $ open 'Writedown.xcworkspace'</code></pre>
                         <h4>
                                 Install from Cocoapods                  </h4>
                   <p>Available pods are `FoundationExtension`, `FoundationExtension/CocoaExtension` and `FoundationExtension/UIKitExtension`.</p>
-                <pre><code>(First to meet Cocoapods: http://cocoapods.org/#install)
+                <pre><code>(If you are new at Cocoapods: http://cocoapods.org/#install)
 $ echo "pod 'FoundationExtension'" >> Podfile
 $ pod install</pre></code>
                 
@@ -187,7 +210,7 @@ $ open 'QRQR.xcworkspace'</code></pre>
         
                         <h4>
                                 Install from Cocoapods                  </h4>
-                <pre><code>(First to meet Cocoapods: http://cocoapods.org/#install)
+                <pre><code>(If you are new at Cocoapods: http://cocoapods.org/#install)
 $ echo "pod 'cdebug'" >> Podfile
 $ pod install</pre></code>
                 
@@ -262,7 +285,7 @@ $ cd xcodepkgtool
         
                         <h4>
                                 Install from Cocoapods                  </h4>
-                <pre><code>(First to meet Cocoapods: http://cocoapods.org/#install)
+                <pre><code>(If you are new at Cocoapods: http://cocoapods.org/#install)
 $ echo "pod 'ObjectXML'" >> Podfile
 $ pod install</pre></code>
                 
@@ -309,6 +332,27 @@ $ cd github-profile
         </section>
                 <section>
         <aside>
+                <p class="view"><a href="https://github.com/youknowone/easyirc">View the Project on GitHub <small>youknowone/easyirc</small></a></p>
+        </aside>
+        <h3 id="easyirc">easyirc</h3>
+        <p>An IRC toolkit to develop IRC client or bot, especially for Python/IRC beginner.</p>               
+                <ul>
+                    <li><a href="http://pypi.python.org/pypi/easyirc">Download <strong>PyPI</strong></a></li>
+                              <li><a href="https://github.com/youknowone/easyirc">View On <strong>GitHub</strong></a></li>
+                  </ul>
+        
+                        <h4>
+                                Install from PyPI                  </h4>
+                <pre><code>$ pip install 'easyirc'</pre></code>
+                
+        <h4>Download source code</h4>
+        <p><a href="https://github.com/youknowone/easyirc/zipball/master">Zip ball</a>, <a href="https://github.com/youknowone/easyirc/tarball/master">Tar ball</a> or git-clone:</p>
+<pre><code>$ git clone git://github.com/youknowone/easyirc.git
+$ cd easyirc
+</code></pre>
+        </section>
+                <section>
+        <aside>
                 <p class="view"><a href="https://github.com/youknowone/itunes-iap">View the Project on GitHub <small>youknowone/itunes-iap</small></a></p>
         </aside>
         <h3 id="itunes-iap">itunes-iap</h3>
@@ -338,7 +382,7 @@ $ cd itunes-iap
         
                         <h4>
                                 Install from Cocoapods                  </h4>
-                <pre><code>(First to meet Cocoapods: http://cocoapods.org/#install)
+                <pre><code>(If you are new at Cocoapods: http://cocoapods.org/#install)
 $ echo "pod 'libintl-alternative'" >> Podfile
 $ pod install</pre></code>
                 
