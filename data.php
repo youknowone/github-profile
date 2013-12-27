@@ -32,7 +32,7 @@ $projects = array(
     ),
     'downloads' => array(
       array('title' => 'Appstore', 'link' => 'http://itunes.apple.com/app/id447521961', 'download' => 'Download From'),
-      array('title' => 'Package', 'link' => 'https://github.com/xchataqua/xchataqua/downloads'),
+      array('title' => 'Package', 'link' => 'https://github.com/xchataqua/xchataqua/releases'),
     ),
   ),
   '구름 입력기' => array(
@@ -58,7 +58,7 @@ $projects = array(
     ),
     'downloads' => array(
       array('title' => 'Appstore', 'link' => 'http://itunes.apple.com/app/id488709442', 'download' => 'Download from'),
-      array('title' => 'Package', 'link' => 'https://github.com/youknowone/VisualJSON/downloads'),
+      array('title' => 'Package', 'link' => 'https://github.com/youknowone/VisualJSON/releases'),
     ),
   ),
   'Writedown!' => array(
@@ -68,7 +68,7 @@ $projects = array(
     'open' => array('type' => 'xcworkspace', 'file' => 'Writedown'),
     'downloads' => array(
       array('title' => 'Appstore', 'link' => 'https://itunes.apple.com/app/id574184591'),
-      array('title' => 'Package', 'link' => 'https://github.com/youknowone/writedown/downloads'),
+      array('title' => 'Package', 'link' => 'https://github.com/youknowone/writedown/releases'),
     ),
   ),
   'FoundationExtension' => array(
