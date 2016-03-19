@@ -33,7 +33,7 @@
         <h3>Others</h3>
         <p>
         <? foreach ($minors as $name => $project): ?>
-        [<a href="#<?=$name?>"><?=$name?></a>] 
+        [<a href="#<?=$name?>"><?=$name?></a>]
         <? endforeach ?>
         </p>
         <? endif ?>
@@ -55,7 +55,7 @@
         <h3 id="<?=$name?>"><?=$name?></h3>
         <? if ($project['description']): ?><p><?=$description?></p><? endif ?>
         <? if ($project['longdescription']): ?><p><?=$longdescription?></p><? endif ?>
-       
+
         <? if (isset($project['downloads'])): ?>
         <ul>
           <? foreach ($downloads as $download): ?>
@@ -114,6 +114,6 @@ $ pod install
       </footer>
     </div>
     <script src="javascripts/scale.fix.js"></script>
-    
+
   </body>
 </html>
