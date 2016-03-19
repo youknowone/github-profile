@@ -47,6 +47,14 @@ $projects = array(
       array('title' => 'Package', 'link' => 'http://bi.gureum.org'),
     ),
   ),
+  '알파희' => array(
+    'description' => 'JIT 컴파일러 탑재로 엔터프라이즈급 성능을 확보한 아희 인터프리터. PyPy/RPython tutorial included.',
+    'github' => 'aheui/rpaheui',
+    'submodule' => False,
+    'downloads' => array(
+      array('title' => 'PyPI', 'link' => 'http://pypi.python.org/pypi/aheui'),
+    ),
+  ),
   'Visual JSON' => array(
     'description' => 'JSON pretty-viewer for OS X.',
     'github' => 'youknowone/VisualJSON',
@@ -64,6 +72,7 @@ $projects = array(
   'Writedown!' => array(
     'description' => 'Markdown editor with preview for OS X',
     'github' => 'youknowone/writedown',
+    'minor' => True,
     'cocoapod' => True,
     'open' => array('type' => 'xcworkspace', 'file' => 'Writedown'),
     'downloads' => array(
@@ -106,6 +115,17 @@ $projects = array(
     ),
     'install' => array(
       'cocoapods' => array(),
+    ),
+  ),
+  'hangul-romanize' => array(
+    'description' => 'Hangul romanization tool',
+    'github' => 'youknowone/hangul-romanize',
+    'minor' => True,
+    'downloads' => array(
+      array('title' => 'PyPI', 'link' => 'http://pypi.python.org/pypi/hangul-romanize'),
+    ),
+    'install' => array(
+      'pypi' => array(),
     ),
   ),
   'prettyexc' => array(
@@ -224,7 +244,7 @@ $projects = array(
       array('title' => 'Terminal', 'link' => 'youknowone.github.com/nonghyeop'),
     ),
     'downloads' => array(
-      array('title' => 'Terminal', 'link' => 'http://youknowone.github.com/nonghyeop', 'download' => 'View the'), 
+      array('title' => 'Terminal', 'link' => 'http://youknowone.github.com/nonghyeop', 'download' => 'View the'),
     ),
   ),
 );
