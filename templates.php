@@ -9,7 +9,7 @@ $installers = array(
     'cocoapods' => array(
       'from' => 'Cocoapods',
       'instruction' => join("\n", array(
-        '(First to meet Cocoapods: http://cocoapods.org/#install)',
+        '(If you are new at Cocoapods: http://cocoapods.org/#install)',
         '$ echo "pod \'%s\'" >> Podfile',
         '$ pod install',
       )),
