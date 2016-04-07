@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/youknowone/github-profile.svg?branch=master)](https://travis-ci.org/youknowone/github-profile)
+
 # Abstract
 Quick Github profile generator
 
