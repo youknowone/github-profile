@@ -1,0 +1,9 @@
+language: php
+sudo: false
+php:
+    - '5.3'
+    - '5.6'
+    - '7.0'
+script:
+    - ln -s data.php.example data.php
+    - make
